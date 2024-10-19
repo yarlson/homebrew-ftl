@@ -5,21 +5,21 @@
 class Ftl < Formula
   desc "FTL - Faster Than Light deployment tool"
   homepage "https://github.com/yarlson/ftl"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/yarlson/ftl/releases/download/0.1.0/ftl_0.1.0_darwin_amd64.tar.gz"
-      sha256 "0160de8546bd9db5f76a60ae001622c2322dc42bb419ae1b146c1a072f6f035d"
+      url "https://github.com/yarlson/ftl/releases/download/0.2.0/ftl_0.2.0_darwin_amd64.tar.gz"
+      sha256 "ed9b5fba265c376c5e78eef6fdb065ae83177e95e4f9af10580128fbc073a859"
 
       def install
         bin.install "ftl"
       end
     end
     on_arm do
-      url "https://github.com/yarlson/ftl/releases/download/0.1.0/ftl_0.1.0_darwin_arm64.tar.gz"
-      sha256 "f4cc49e27fbc386d0739b652ddf3e663960b45393f75bbb99046126a91471ccd"
+      url "https://github.com/yarlson/ftl/releases/download/0.2.0/ftl_0.2.0_darwin_arm64.tar.gz"
+      sha256 "98563620adcd49b125c3326b1f2d7a658d61ec89d353bd44a880c76efcf81891"
 
       def install
         bin.install "ftl"
@@ -30,8 +30,8 @@ class Ftl < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/yarlson/ftl/releases/download/0.1.0/ftl_0.1.0_linux_amd64.tar.gz"
-        sha256 "250dc60fa9d81486b232a11bc14ed1eb4baa38cb59c7abc7925d32eafe0ec544"
+        url "https://github.com/yarlson/ftl/releases/download/0.2.0/ftl_0.2.0_linux_amd64.tar.gz"
+        sha256 "289344f895e457000f18157a972be679e2ce2d8a12b641bb6d498f99827338ed"
 
         def install
           bin.install "ftl"
@@ -40,8 +40,8 @@ class Ftl < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/yarlson/ftl/releases/download/0.1.0/ftl_0.1.0_linux_arm64.tar.gz"
-        sha256 "fde185c5e49069667e815e6e56cb7788382aa96d7bd7698ecd0147e7a4ae1cdc"
+        url "https://github.com/yarlson/ftl/releases/download/0.2.0/ftl_0.2.0_linux_arm64.tar.gz"
+        sha256 "16b3e9c26ee4b002fb7ffdf1cb51fb77de09f63e830eeb04592ee7b30c9fae32"
 
         def install
           bin.install "ftl"
