@@ -11,7 +11,7 @@ class Ftl < Formula
   on_macos do
     on_intel do
       url "https://github.com/yarlson/ftl/releases/download/0.18.0/ftl_0.18.0_darwin_amd64.tar.gz"
-      sha256 "e7bc679dea32edb7d53a6a6aee2e82d36d284d995b8f03a1c2b7c7592fb3c040"
+      sha256 "7b5c1893d4252808f6f530370957a7111dd160a3e6b89b7ed3857fb9182d56c1"
 
       def install
         bin.install "ftl"
@@ -19,7 +19,7 @@ class Ftl < Formula
     end
     on_arm do
       url "https://github.com/yarlson/ftl/releases/download/0.18.0/ftl_0.18.0_darwin_arm64.tar.gz"
-      sha256 "306d965c9d0b344e876ac54e886ca637a19afb3ba531c55b99c6e6716259591e"
+      sha256 "204518552e55e66445adae157f58832a83a4d229dc96c87995d6eb4949bcd8b2"
 
       def install
         bin.install "ftl"
@@ -31,7 +31,7 @@ class Ftl < Formula
     on_intel do
       if Hardware::CPU.is_64_bit?
         url "https://github.com/yarlson/ftl/releases/download/0.18.0/ftl_0.18.0_linux_amd64.tar.gz"
-        sha256 "0a64e56d7b61190d9b242ecf3d08117416fbade7834a54e7088daa8172994a71"
+        sha256 "e31a10104b200f76a99476ad4b1cec33392a6701856d87defba594e2fa2fc7cc"
 
         def install
           bin.install "ftl"
@@ -41,7 +41,7 @@ class Ftl < Formula
     on_arm do
       if Hardware::CPU.is_64_bit?
         url "https://github.com/yarlson/ftl/releases/download/0.18.0/ftl_0.18.0_linux_arm64.tar.gz"
-        sha256 "7d8c5cf43f745a14325bd313e252eca808a010bcc035db9d8f2da82009b27f43"
+        sha256 "d749097140618b26d271c9399d50b2d8c31ea960e03a88ad0970cd35dc94c069"
 
         def install
           bin.install "ftl"
